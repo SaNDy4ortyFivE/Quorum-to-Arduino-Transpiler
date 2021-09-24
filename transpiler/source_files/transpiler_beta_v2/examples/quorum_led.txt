@@ -1,0 +1,13 @@
+use LED
+class MyClas
+        LED led
+        action Main()
+                led:pinLED(10)
+                integer a = 10
+                if a > 15
+                        led:ON()
+                else
+                        led:OFF()
+                end
+        end
+end

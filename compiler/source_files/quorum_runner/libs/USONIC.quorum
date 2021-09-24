@@ -1,0 +1,20 @@
+class USONIC
+        action trigpin(integer pin)
+                //Use this action to set tirgger pin number
+                //to which ultrasonic sensor is connected
+                output "Trigger pin connected at " + pin
+        end
+        action echopin(integer pin)
+                //Use this action to set echo pin number
+                //to which ultrasonic sensor is connected
+                output "Echo pin connected at " + pin
+        end
+        action GETDISTANCE() returns integer
+                //read distance from ultrasonic
+                //custom functions is included in transpiler
+                output "Getting distance..."
+                return 1
+        end
+        action Main()
+        end
+end

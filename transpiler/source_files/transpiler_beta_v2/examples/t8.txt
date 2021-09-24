@@ -1,0 +1,10 @@
+use LMTEMP
+class MyClass
+        LMTEMP lmtp
+        action Main()
+                lmtp:pinLMTP(10)
+                number a
+                a = lmtp:READTEMP()
+                output a
+        end
+end

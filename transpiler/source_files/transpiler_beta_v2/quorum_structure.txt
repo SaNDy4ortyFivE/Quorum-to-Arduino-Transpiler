@@ -1,0 +1,28 @@
+#########################
+class name = IRED
+object creation = IRED ir
+pin = ir:pinIR(pin_number)
+function = ir:READVAL()
+#########################
+class name = USONIC
+object creation = USONIC usonic
+trig pin = usonic:trigpin(pin_number)
+echo pin = usonic:echopin(pin_number)
+read = usonic:GETDISTANCE()...........need to write seperate functions in arduino to convert into proper temperature
+#########################
+class name = BUTTON
+object creation = BUTTON btn
+pin = btn:pinBTN(pin_number)
+read = btn:STATE()
+#########################
+class name = LMTEMP
+object creation = LMTEMP lmtemp
+pin = lmtemp:pinLMTP(pin_number)
+read = lmtemp:READTEMP()........need to write seperate functions in arduino to convert into proper temperature
+#########################
+class name = LED
+object creation = LED led
+pin = led:pinLED(pin_number)
+on = led:ON()
+off = led:OFF()
+#########################

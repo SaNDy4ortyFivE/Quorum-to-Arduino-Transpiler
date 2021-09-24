@@ -1,0 +1,14 @@
+class LMTEMP
+        action pinLMTP(integer pin)
+                //Use this action to set pin number
+                //to which LM35 sensor is connected
+                output "LM35 connected at " + pin
+        end
+        action READTEMP() returns number
+                //custom function included in transpiler
+                output "Reading state of the button..."
+                return 1.0
+        end
+        action Main()
+        end
+end

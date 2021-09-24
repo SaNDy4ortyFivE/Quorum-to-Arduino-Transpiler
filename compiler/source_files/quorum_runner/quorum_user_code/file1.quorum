@@ -1,0 +1,8 @@
+use LED
+class myclass
+        LED ledred
+        action Main()
+                ledred:pinLED(12)
+                ledred:ON()
+        end
+end

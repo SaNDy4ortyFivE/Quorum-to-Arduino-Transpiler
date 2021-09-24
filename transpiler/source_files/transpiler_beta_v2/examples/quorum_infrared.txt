@@ -1,0 +1,9 @@
+use IRED
+class MyClass
+        IRED ired
+        action Main()
+                ired:pinIR(10)
+                integer a = ired:READVAL()
+                output a
+        end
+end

@@ -1,0 +1,10 @@
+use USONIC
+class MyClas
+        USONIC uson
+        action Main()
+                uson:trigpin(10)
+                uson:echopin(11)
+                integer a = uson:GETDISTANCE()
+                output a
+        end
+end

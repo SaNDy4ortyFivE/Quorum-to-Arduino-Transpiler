@@ -1,0 +1,14 @@
+class BUTTON
+        action pinBTN(integer pin)
+                //Use this action to set pin number
+                //to which button is connected
+                output "Button connected at " + pin
+        end
+        action STATE() returns integer
+                //reads value from the pin connected
+                output "Reading state of the button..."
+                return 1
+        end
+        action Main()
+        end
+end

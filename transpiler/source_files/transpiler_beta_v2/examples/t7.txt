@@ -1,0 +1,14 @@
+use BUTTON
+class MyClass
+        BUTTON btn
+        action Main()
+                btn:pinBTN(10)
+                integer a
+                a = btn:STATE()
+                if a = 1
+                        output a
+                else
+                        output a
+                end
+        end
+end

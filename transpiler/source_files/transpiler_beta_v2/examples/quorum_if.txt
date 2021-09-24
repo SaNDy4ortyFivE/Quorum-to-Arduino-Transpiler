@@ -1,0 +1,10 @@
+class MyClass
+        action Main()
+                integer a = 10
+                integer b = 20
+                if a > 5
+                        output a
+                end
+                output b
+        end
+end

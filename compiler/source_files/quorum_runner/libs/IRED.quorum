@@ -1,0 +1,14 @@
+class IRED
+        action pinIR(integer pin)
+                //Use this action to set pin number
+                //to which IR sensor is connected
+                output "LED connected at " + pin
+        end
+        action READVAL() returns integer
+                //reads value from the pin connected
+                output "Reading value..."
+                return 1
+        end
+        action Main()
+        end
+end

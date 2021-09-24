@@ -1,0 +1,13 @@
+class LED
+        action pinLED(integer pin)
+                output "LED connected"
+        end
+        action ON()
+                output "LED turned ON"
+        end
+        action OFF()
+                output "LED turned OFF"
+        end
+        action Main()
+        end
+end

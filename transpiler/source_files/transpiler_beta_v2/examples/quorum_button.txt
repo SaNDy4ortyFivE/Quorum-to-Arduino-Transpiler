@@ -1,0 +1,9 @@
+use BUTTON
+class MyClass
+        BUTTON btn
+        action Main()
+                btn:pinBTN(10)
+                integer a = btn:STATE()
+                output a
+        end
+end

@@ -1,0 +1,20 @@
+use LED
+class myclass
+        LED ledred
+        LED ledgreen
+        LED ledblue
+        action Main()
+		integer a = 20
+		integer b
+		b = 15
+		ledred:pin(10)
+		ledgreen:pin(5)		
+		ledblue:pin(2)		
+		if a < b
+			ledred:ON()
+                else
+                	ledblue:ON()
+		end
+		ledgreen:ON()
+        end
+end

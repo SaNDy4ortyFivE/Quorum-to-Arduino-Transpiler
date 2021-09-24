@@ -1,0 +1,15 @@
+use LED
+use IRED
+class myclass
+        LED ledred
+        LED ledgreen
+        LED ledblue
+        action Main()
+                ledred:pin(10)
+                ledred:ON()
+                ledgreen:pin(5)
+                ledgreen:ON()
+                ledblue:pin(2)
+                ledblue:ON()
+        end
+end

@@ -1,0 +1,8 @@
+use IRED
+class myclass
+        IRED ired
+        action Main()
+                ired:pin(10)
+		ired:READ()
+        end
+end

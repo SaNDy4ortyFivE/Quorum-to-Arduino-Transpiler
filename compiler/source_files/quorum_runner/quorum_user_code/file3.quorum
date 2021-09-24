@@ -1,0 +1,17 @@
+use USONIC
+use LED
+class MyClass
+        USONIC usonic
+        LED led
+        action Main()
+                usonic:trigpin(10)
+                usonic:echopin(11)
+                led:pinLED(12)
+                integer a = usonic:GETDISTANCE()
+                if a < 20
+                        led:ON()
+                else
+                        led:OFF()
+                end
+        end
+end

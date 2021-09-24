@@ -1,0 +1,15 @@
+use IRED
+class MyClass
+        IRED ired
+        action Main()
+                ired:pinIR(10)
+                integer a
+                a = ired:READVAL()
+                integer b = 20
+                if a < 20
+                        output a
+                else
+                        output b
+                end
+        end
+end

@@ -1,0 +1,22 @@
+use USONIC
+use LED
+class MyClass
+        USONIC usona
+        USONIC usonb
+        LED ledgreen
+        action Main()
+                usona:trigpin(10)
+                usona:echopin(11)
+                usonb:trigpin(7)
+                usonb:echopin(8)
+                ledgreen:pinLED(12)
+                integer a
+                integer b = usonb:GETDISTANCE()
+                a  = usona:GETDISTANCE()
+                if a < b
+                        ledgreen:ON()
+                else
+                        ledgreen:OFF()
+                end
+        end
+end

@@ -1,0 +1,16 @@
+use LMTEMP
+use IRED
+class MyClass
+        LMTEMP lm
+        IRED ir
+        action Main()
+                lm:pinLMTP(14)
+                ir:pinIR(2)
+                integer a = ir:READVAL()
+                number b = 0
+                if a = 1
+                        b = lm:READTEMP()
+                        output b
+                end
+        end
+end
